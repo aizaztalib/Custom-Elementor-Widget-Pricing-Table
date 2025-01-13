@@ -1,0 +1,163 @@
+/*--------------------------------------------------------------
+## Pricing Table
+--------------------------------------------------------------*/
+.xp-pricing-table {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.xp-pricing-table .inner-table {
+  padding: 30px 40px 40px;
+  background: #fff;
+}
+.xp-pricing-table .inner-table .title-table {
+  margin-bottom: 35px;
+}
+.xp-pricing-table .inner-table .title-table span {
+  display: inline-block;
+  padding: 7px 11px;
+  line-height: 1;
+  font-size: 13px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #fff;
+  background: #262832;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+.xp-pricing-table .inner-table h2 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  padding-left: 27px;
+  top: -1px;
+  color: #C19977;
+}
+.xp-pricing-table .inner-table h2 sup {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  font-size: 24px;
+}
+.xp-pricing-table .inner-table > p {
+  display: inline-block;
+  position: relative;
+  color: #959595;
+  bottom: -9px;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+.xp-pricing-table .inner-table > p:before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: 5px;
+  width: 1px;
+  height: 49px;
+  background: #959595;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.xp-pricing-table .inner-table .short-text {
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+.xp-pricing-table .inner-table .details {
+  padding: 26px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.xp-pricing-table .inner-table .details ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 42px;
+  text-align: left;
+}
+.xp-pricing-table .inner-table .details ul li {
+  position: relative;
+  color: #9d9d9d;
+}
+.xp-pricing-table .inner-table .details ul li:after {
+  position: absolute;
+  content: "\f135";
+  font-family: "xpcustomicon";
+  font-size: 13px;
+  right: 0;
+  color: #d92300;
+}
+.xp-pricing-table .inner-table .details ul li.active {
+  color: #282828;
+}
+.xp-pricing-table .inner-table .details ul li.active:after {
+  content: "\f126";
+  color: #69c47e;
+  font-size: 14px;
+}
+.xp-pricing-table .inner-table .details.no-icon ul li:after {
+  display: none;
+}
+.xp-pricing-table .xptf-btn,
+.xp-pricing-table .xptf-btn:visited {
+  color: #1a1b1e;
+}
+.xp-pricing-table .xptf-btn:hover,
+.xp-pricing-table .xptf-btn:visited:hover {
+  color: #fff;
+}
+.xp-pricing-table.is-featured .inner-table {
+  color: #fff;
+  background: #262832;
+}
+.xp-pricing-table.is-featured .inner-table .title-table span {
+  background: #C19977;
+}
+.xp-pricing-table.is-featured .inner-table .details {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #8e88b8;
+}
+.xp-pricing-table.is-featured .inner-table h2,
+.xp-pricing-table.is-featured .inner-table .details ul li.active {
+  color: #fff;
+}
+.xp-pricing-table.is-featured .xptf-btn {
+  background: #C19977;
+  color: #fff;
+}
+.xp-pricing-table.is-featured .xptf-btn:hover {
+  background: transparent;
+}
+.xp-pricing-table:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+@media (max-width: 1024px) {
+  .xp-pricing-table {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 479px) {
+  .xp-pricing-table .inner-table h2 {
+    font-size: 48px;
+  }
+  .xp-pricing-table .inner-table .details {
+    font-size: 14px;
+  }
+}
